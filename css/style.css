@@ -1,0 +1,42 @@
+.carousel-inner img{
+	width: 100%; 
+    margin: 0px;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #fff;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.price{
+	color:  #f4511e;
+	font-size: 20px;
+}
+.bg{
+	/*margin: 10px;*/
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	/*border-bottom: 1px solid #ddd;*/
+}
+.pice{
+	color:  #f4511e;
+	font-size: 25px;
+}
+.diemdi, .diemden{
+	color: #f4511e;
+	font-size: 30px;
+}
+.icon
+{
+	color: #f4511e;
+	font-size: 25px;
+}
+.muiten{
+	padding-top: 35px;
+}
