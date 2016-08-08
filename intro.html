@@ -22,8 +22,34 @@
 	<link rel="shortcut icon" href="images/favicon.png" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 </head>
-<body>
-	<div id="myCarousle" class="carousel slide" data-ride="carousel">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!--header -->
+	<!-- nav menu -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+			   
+			    <li><a href="#datve">ĐẶT VÉ</a></li>
+			    <li><a href="#khuyenmai">KHUYẾN MÃI</a></li>
+			    <li><a href="#thongtin">THÔNG TIN</a></li>
+			    <li><a href="#gioithieu">GIỚI THIỆU</a></li>
+			    <li><a href="#lienhe">LIÊN HỆ</a></li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	<!--ket thuc -->
+	
+	<!--<div id="myCarousle" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousle" data-slide-to="0" class=""></li>
 		</ol>
@@ -39,8 +65,22 @@
 				</div>
 			</div>	
 		</div>
-	</div>
-	<div class="container">
+	</div> -->
+	<div class="master-wrapper-page">
+		<div class="wrapper-home-banner flight">
+			<div class="container">
+				
+			</div>
+		</div>
+		
+	</div> 
+
+		
+	
+
+	<!--end header-->
+	<!--Ve may bay khuyen mai -->
+	<div id="datve" class="container">
 		<h2><strong>VÉ MÁY BAY KHUYẾN MÃI</strong></h2>
 		<b class="pull-right"><a href="">Xem tất cả</a></b><br>
 		<div class="col-md-12 bxslider1">
@@ -148,7 +188,9 @@
 	
 			</div>
 	</div>
-	<div class="container">
+	<!--end ve khuyen mai -->
+	<!--khuyen mai va dich vu -->
+	<div id="khuyenmai" class="container">
 		<div class="row">
 			<div class="col-sm-6">
 				<h2><strong>KHUYẾN MÃI</strong></h2>
@@ -222,7 +264,8 @@
 			</div>
 		</div>		
 	</div>
-	<div class="container bg-grey">
+	<!--dich vu-->
+	<div id="thongtin" class="container bg-grey">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3><strong>VÉ MÁY BAY QUỐC NỘI</strong></h3>
@@ -242,7 +285,9 @@
 			</div>
 		</div>
 	</div>
-	<diAv class="container-fluid text-center nhanmail">
+	<!--end khuyen mai- dich vu -->
+	<!--nhan mail khuyen mai-->
+	<div class="container-fluid text-center nhanmail">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<form action="" method="POST" role="form" class="form-inline">
@@ -256,7 +301,9 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer"  role="contentinfo">
+	<!-- end nhan mail-->
+	<!--footer-->
+	<footer id="lienhe" class="footer"  role="contentinfo">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -270,10 +317,10 @@
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-cot2">
 					<ul class="item1" style="list-style-type:none;">
-						<li>Về chúng tôi</li>
-						<li>Điều lệ sử dụng</li>
-						<li>Các điều kiện và điều khoản</li>
-						<li>Điều lệ vận hành</li>
+						<li><a href=""> Về chúng tôi</a></li>
+						<li><a href=""> Điều lệ sử dụng</a></li>
+						<li><a href=""> Các điều kiện và điều khoản</a></li>
+						<li><a href=""> Điều lệ vận hành</a></li>
 					</ul>
 						
 				</div>
@@ -299,14 +346,15 @@
 				</div>
 			</div>
 			
-			<div class="row">
+			<div class="row text-center">
 				 <a href="#myPage" title="To Top">
 					<span class="glyphicon glyphicon-chevron-up"></span>
 				</a>
-  				<p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  				<p>Bootstrap Theme Made By ThanhTan<a href="http://www.globalflight.com.vn" title="Visit w3schools">http://globallight.com.vn</a></p>
 			</div>
 		</div>
 	</footer>
+	<!-- end footer-->
 	<script src="js/function.js"></script>
 	
 </body>
