@@ -1,3 +1,8 @@
+
+h1,h2,h3,h4{
+	font-family: 'Roboto Mono' ;
+
+}
 .carousel-inner img{
 	width: 100%; 
     margin: 0px;
@@ -32,11 +37,145 @@
 	color: #f4511e;
 	font-size: 30px;
 }
-.icon
+.icon, 
 {
 	color: #f4511e;
 	font-size: 25px;
 }
 .muiten{
 	padding-top: 35px;
+}
+.choose{
+	padding: 25px;
+	border-radius: 0;
+	border: 1px solid #ddd;
+	background-color: #f4f4f4;
+	box-shadow: rgba(110,110,110,.6) 0 0 7px;
+	float: left;
+
+}
+.choose h2{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.choose-icon{
+	color: #f4511e;
+	font-size: 50px;
+	padding: 30px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+}
+.choose-icon:hover{
+	background-color: #f4511e;
+	color: #fff;
+	position: none;
+
+}
+.choose-text{
+	padding-left:40px; 
+	text-align: justify;
+}
+.choose-text-p{
+	padding-left:40px; 
+	color: #929292;
+}
+.choose-text:hover{
+	color: #337ab7;
+}
+.slide img{
+	width: 100%;
+	position: relative; 
+}
+.slide .noidia{
+	color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: #FF5115;
+   padding: 10px; 
+}
+.bg-grey{
+	background-color: #f6f6f6;
+	box-shadow: rgba(110,110,110,.6) 0 0 7px;
+}
+.nhanmail{
+	background-color: #D6D6D6;
+	padding: 10px;
+}
+.nhanmail label{
+	font-size: 25px;
+	 font-family: 'Open Sans',Helvetica,Arial,sans-serif !important;
+	 padding-right:40px;
+	 text-align: center;
+
+}
+.nhanmail .mail{
+	font-style: 25px;
+}
+.nhanmail .submit{
+	background-color: #f4511e;
+	border: 0;
+	font-size: 30px;
+	margin-left: 40px;
+}
+.nhanmail .submit:hover{
+	color: #f4511e;
+	background-color: #fff;
+	border: 1px solid #f4511e;
+}
+.nhanmail input[type=text]{
+	width: 300px;
+	height: 50px;
+}
+.bg-footer{
+	background-color: #3A3538;
+	padding-top: 30px;
+
+}
+.footer{
+	background: #252b36;
+	color: #fff;
+	padding: 20px;
+}
+.footer-logo{
+	margin-left: 50px;
+}
+.item a, .item1 a{
+	 color: #fff !important;
+	 line-height: 4rem;
+	 font-size: 15px;
+}
+.item1{
+	padding-top: 50px;
+	font-size: 15px;
+	line-height: 3.7rem;
+}
+.app-footer{
+
+}
+.app-footer:hover{
+	border-bottom: 2px solid #f4511e ;
+	border-radius: 5px;
+}
+.icon-footer{
+	font-size: 40px;
+	background-color: #000;
+	color: #fff;
+
+}
+.icon-footer:hover{
+	 border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+.booder-footer{
+	  border-top: 10px solid #575c63;
+    padding-top: 1.5rem;
+
+}
+@media screen and (max-width: 600px){
+	.choose{
+		 display: none;
+	}
+	.bg-grey img{
+		width: 100%;
+	}
 }
