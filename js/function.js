@@ -19,6 +19,7 @@ $(document).ready(function(){
    	slideMargin: 10
   });
 
+
       $(".navbar a, footer a[href='#myPage']").on('click',function(event) {
         if (this.hash !== "") {
           event.preventDefault();
@@ -34,4 +35,6 @@ $(document).ready(function(){
         }
         
       });
-   })
+
+      
+})

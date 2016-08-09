@@ -66,10 +66,10 @@ h1,h2,h3,h4{
 	color: #f4511e;
 	font-size: 30px;
 }
-.icon, 
+.glyphicon, .icon
 {
-	color: #f4511e;
-	font-size: 25px;
+	color: #f4511e !important;
+	font-size: 25px !important ;
 }
 .muiten{
 	padding-top: 35px;
@@ -139,13 +139,15 @@ h1,h2,h3,h4{
 .nhanmail .mail{
 	font-style: 25px;
 }
-.nhanmail .submit{
+.btn-search, .nhanmail .submit{
 	background-color: #f4511e;
 	border: 0;
 	font-size: 30px;
 	margin-left: 40px;
+
 }
-.nhanmail .submit:hover{
+
+.btn-search:hover, .nhanmail .submit:hover{
 	color: #f4511e;
 	background-color: #fff;
 	border: 1px solid #f4511e;
@@ -167,7 +169,7 @@ h1,h2,h3,h4{
 .footer-logo{
 	margin-left: 50px;
 }
-.item a, .item1 a{
+.item2 a, .item1 a{
 	 color: #fff !important;
 	 line-height: 4rem;
 	 font-size: 15px;
@@ -225,6 +227,34 @@ h1,h2,h3,h4{
     border-color: transparent;
     color: #fff !important;
 }
+<<<<<<< HEAD
+=======
+.form-inline .glyphicon{
+	color: #f4511e !important;
+	font-size: 18px !important ;
+}
+.bg-search{
+	margin-top: 50px;
+}
+.form-search{
+	padding-top: 30px;
+}
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.title-footer{
+	font-size: 25px;
+	color: #f4511e;
+}
+.modal-body{
+	line-height: 3rem;
+	padding: 10px;
+}
+>>>>>>> 9b0f5b2ae96dd881d6c24d5171f012f41f2ce14d
 @media screen and (max-width: 600px){
 	.choose{
 		 display: none;
