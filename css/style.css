@@ -66,10 +66,10 @@ h1,h2,h3,h4{
 	color: #f4511e;
 	font-size: 30px;
 }
-.icon, 
+.glyphicon, .icon
 {
-	color: #f4511e;
-	font-size: 25px;
+	color: #f4511e !important;
+	font-size: 25px !important ;
 }
 .muiten{
 	padding-top: 35px;
