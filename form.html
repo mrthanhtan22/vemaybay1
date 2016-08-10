@@ -273,7 +273,7 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary" onclick="hanhkhach()">Save changes</button>
+						<button type="button" class="btn btn-primary" onclick="hanhkhach()">Xong</button>
 					</div>
 				</div>
 			</div>
@@ -337,14 +337,24 @@
  		<script>
  		
  			function hanhkhach() {
- 					var _nguoilon = $("inputNguoilon").val();
- 					$('#inputSonguoi').val(_nguoilon);
- 					
+ 			var _nguoilon = $('#inputNguoilon').val();
+ 			var _treem	= $('#inputTreem').val();
+ 			var _tresosinh = $('#inputTresosinh').val();
+ 			num1 = parseInt(_nguoilon);
+ 			num2 = parseInt(_treem);
+ 			num3 = parseInt(_tresosinh);
+ 			 var tong = num1 + num2 + num3;
+ 			 $('#nguoilon').val(_nguoilon);
+ 			 $('#treem').val(_tresosinh);
+ 			 $('#tresosinh').val(_tresosinh);
+ 			 $('#inputSonguoi').val(tong);
+
  			}
- 	
  			
  			
  		</script>
+ 		<script>
  		
+ 		</script>
 	</body>
 </html>
