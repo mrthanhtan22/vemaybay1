@@ -70,7 +70,11 @@
 							
 							<div class="input-group">
 				    		<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-				    		<input type="number" name="songuoi" id="inputSonguoi" class="form-control" placeholder="Số người" min="1" step="" required="required" title="songuoi" style="height:50px">
+				    		<input type="number" name="songuoi" id="inputSonguoi" class="form-control" placeholder="Số người" min="1" step="" required="required" title="songuoi" style="height:50px" data-toggle="modal" data-target="#soluong" readonly="" >
+				    		<input type="hidden" name="nguoilon" id="nguoilon" class="form-control" value="">
+				    		<input type="hidden" name="treem" id="treem" class="form-control" value="">
+				    		<input type="hidden" name="tresosinh" id="tresosinh" class="form-control" value="">
+				    		
 						  </div>
 					
 						
@@ -230,6 +234,50 @@
 				</div>
 			</div>
 		</div> <!--modal noi den -->
+
+		<div class="modal fade" id="soluong">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Số hành khách</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" method="POST" class="form-inline" role="form">
+							<div class="form-group">
+							<div class="row">
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+									<input type="number" name="" id="inputNguoilon" class="form-control" value="" min="1" max="" step="" required="required" title="" placeholder="Người lớn(>12t)">
+								</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="input-group">
+									<div class="input-group-addon"><span class=" glyphicon glyphicon-user"></span></div>
+									<input type="number" name="" id="inputTreem" class="form-control" value="" min="0" max="" step="" required="required" title="" placeholder="Trẻ em (2-11t)">
+								</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+									<input type="number" name="" id="inputTresosinh" class="form-control" value="" min="0" max="" step="" required="required" title="" placeholder="Trẻ sơ sinh(<2t)">
+								</div>
+								</div>
+							</div>
+							
+							
+							
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" onclick="hanhkhach()">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<script src="js/bootstrap-datepicker.js"></script>
 		<script src="lib/jquery.easy-autocomplete.js"></script>
@@ -247,7 +295,7 @@
  			var options = {
  				url: "json/sanbay.json",
 
-				getValue: "name",
+				getValue: "label",
 
 				list: {
 					maxNumberOfElements: 5,
@@ -266,7 +314,7 @@
 						callback: function() {}
 					},
 					onSelectItemEvent: function() {
-					var value = $("#modaldsanbay").getSelectedItemData().name;
+					var value = $("#modaldsanbay").getSelectedItemData().label;
 
 					$("#inputDiemden").val(value).trigger("change");
 						}
@@ -285,6 +333,17 @@
  				 $('#inputDiemden').val(value);
  			});		
  				
+ 		</script>
+ 		<script>
+ 		
+ 			function hanhkhach() {
+ 					var _nguoilon = $("inputNguoilon").val();
+ 					$('#inputSonguoi').val(_nguoilon);
+ 					
+ 			}
+ 	
+ 			
+ 			
  		</script>
  		
 	</body>
