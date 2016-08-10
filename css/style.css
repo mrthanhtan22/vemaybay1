@@ -227,8 +227,7 @@ h1,h2,h3,h4{
     border-color: transparent;
     color: #fff !important;
 }
-<<<<<<< HEAD
-=======
+
 .form-inline .glyphicon{
 	color: #f4511e !important;
 	font-size: 18px !important ;
@@ -254,7 +253,15 @@ h1,h2,h3,h4{
 	line-height: 3rem;
 	padding: 10px;
 }
->>>>>>> 9b0f5b2ae96dd881d6c24d5171f012f41f2ce14d
+.bg-search{
+	background: rgba(52, 213, 245, 0.29) none repeat scroll 0% 0%;
+	top: 0px;
+
+}
+.bg-search1{
+	background:rgba(52, 213, 245, 0.41) none repeat scroll 0% 0%;
+
+}
 @media screen and (max-width: 600px){
 	.choose{
 		 display: none;
