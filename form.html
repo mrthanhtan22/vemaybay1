@@ -26,19 +26,15 @@
 		
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div class="jumbotron">
-				
-			</div>
-		</div>
-		<div class="container-fluid bg-search">
+		
+		<div class="container-fluid" id="bg-search">
 			<div class="jumbotron text-center bg-search1">
 				 <form id="myForm" class="form-inline form-search" role="form" method="get" action="">
 				 <!-- diem di -->
 					<div class="form-group">
 					    <div class="input-group">
 					    	<div class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></div>
-					    	<input type="text" class="form-control" id="inputDiemdi" placeholder="Điểm đi" data-toggle="modal" data-target="#noidi" style="height:50px">
+					    	<input type="text" class="form-control" id="inputDiemdi" placeholder="Điểm đi" data-toggle="modal" data-target="#noidi" style="height:50px" maxlength="5">
 						</div>
 					</div>
 				<!--end diem di -->
@@ -110,6 +106,11 @@
 						
 					
 				</form>
+			</div>
+		</div>
+		<div class="container-fluid test">
+			<div class="jumbotron">
+				<a class="scrollToTop"></a>
 			</div>
 		</div>
 		
@@ -359,6 +360,7 @@
  			 	return false;
  			 } else {
  			 	 $('#soluong').modal('toggle');
+
  			 }
  			}
  			
@@ -371,6 +373,31 @@
 				$('#inputNgayve').show();
 			});
  		</script>
- 		
+ 		<script>
+ 			$(document).ready(function() {
+ 				$(window).scroll(function(){
+ 					if ($(this).scrollTop() > 100) {
+ 						$('#bg-search').addClass('fixed');
+ 					} else{
+ 						$('#bg-search').removeClass('fixed');
+ 					}
+ 				})
+ 			});
+ 		</script>
+ 		<script>
+ 			$(document).ready(function() {
+ 				 $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          $('.scrollToTop').fadeIn();
+        } else{
+          $('.scrollToTop').fadeOut();
+        }
+      });
+      $('.scrollToTop').click(function() {
+        $('html,body').animate({scrollTop: 0}, 800);
+        return false;
+      });
+ 			});
+ 		</script>
 	</body>
 </html>
