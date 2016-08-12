@@ -37,9 +37,10 @@ $(document).ready(function(){
       });
 /*backtotop may bay*/
       $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 100 && $( window ).width() > 800 ) {
           $('.scrollToTop').fadeIn();
            $('#bg-search').addClass('fixed');
+
         } else{
           $('.scrollToTop').fadeOut();
           $('#bg-search').removeClass('fixed');

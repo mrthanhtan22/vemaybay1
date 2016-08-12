@@ -11,7 +11,7 @@ h1,h2,h3,h4{
  }
  .wrapper-home-banner.flight {
     background-image: url(../images/backgroud.jpg);
-    height: 480px;
+    height: 680px;
     margin-top: -10px;
     position: relative;
 }
@@ -165,7 +165,8 @@ h1,h2,h3,h4{
 .footer{
 	background: #252b36;
 	color: #fff;
-	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 40px;
 }
 .footer-logo{
 	margin-left: 50px;
@@ -265,6 +266,7 @@ h1,h2,h3,h4{
 }
 #bg-search{
 	padding-top:100px;
+	height: 303px;
 }
 .scrollToTop{
 	width:100px; 
@@ -281,6 +283,12 @@ h1,h2,h3,h4{
 }
 
 .fixed {position:fixed; top:0; left:0; z-index:2; width:100%;}
+.modal{
+	margin-top:40px;
+}
+.khoangcach{
+	padding: 100px;
+}
 @media screen and (max-width: 600px){
 	.choose{
 		 display: none;
@@ -288,4 +296,12 @@ h1,h2,h3,h4{
 	.bg-grey img{
 		width: 100%;
 	}
+	.khoangcach{
+		padding: 0;
+	}
+@media screen and (max-width: 800px){
+	.khoangcach{
+		padding: 0;
+	}
+}
 }

@@ -51,10 +51,12 @@
 		</div>
 	</nav>
 	<!--ket thuc -->
-
+	
 	<div class="master-wrapper-page">
 		<div class="wrapper-home-banner flight">
-
+			<div class="container-fluid khoangcach" id="khoangcach">
+		
+			</div>
 			<!---Form Search -->
 		
 			<div class="jumbotron text-center bg-search1" id="bg-search">
@@ -188,12 +190,11 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
+						
 					</div>
 				</div>
 			</div>
-		</div> <!-- moldal noi di -->
+		</div> <!-- end moldal noi di -->
 		<div  class="modal fade" id="noiden" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -255,12 +256,11 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" id="" class="btn btn-primary">Save changes</button>
+						<button type="button" id="" class="btn btn-primary" onclick="xong()">Xong</button>
 					</div>
 				</div>
 			</div>
-		</div> <!--modal noi den -->
+		</div> <!-- end modal noi den -->
 
 		<div class="modal fade" id="soluong">
 			<div class="modal-dialog">
@@ -308,32 +308,7 @@
 			</div>
 		</div>
 		
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="lib/jquery.easy-autocomplete.js"></script>
-		<script>
-			function hanhkhach() {
-      var _nguoilon = $('#inputNguoilon').val();
-      var _treem  = $('#inputTreem').val();
-      var _tresosinh = $('#inputTresosinh').val();
-      num1 = parseInt(_nguoilon);
-      num2 = parseInt(_treem);
-      num3 = parseInt(_tresosinh);
-       var tong = num1 + num2 + num3;
-       var tong_tresosinh = num1 + num2;
-       $('#nguoilon').val(_nguoilon);
-       $('#treem').val(_tresosinh);
-       $('#tresosinh').val(_tresosinh);
-       $('#inputSonguoi').val(tong);
-       if (num3 > tong_tresosinh) {
-        alert("Số trẻ sơ sinh vượt quá mức cho phép");
-        return false;
-       } else {
-         $('#soluong').modal('toggle');
-
-       }
-      }
-		</script>
- 		 
+		
  			
 	<!-- ket thuc form search -->
 
@@ -601,10 +576,11 @@
 	</div>
 	<!-- end nhan mail-->
 	<!--footer-->
-	<footer id="lienhe" class="footer"  role="contentinfo">
+	
+		<footer id="lienhe" class="footer"  role="contentinfo">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<div class="col-sm-3">
 					<img src="images/favicon.png" class="footer-logo">
 					<ul class="item2" style="list-style-type:none;" >
 						<li><a href="">Liên hệ</a></li>
@@ -613,7 +589,7 @@
 						<li><a href="">Liên hệ quảng cáo với chúng tôi</a></li>
 					</ul>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-cot2">
+				<div class="col-sm-3 footer-cot2">
 					<ul class="item1" style="list-style-type:none;">
 						<li><a href=""> Về chúng tôi</a></li>
 						<li><a href=""> Điều lệ sử dụng</a></li>
@@ -622,7 +598,7 @@
 					</ul>
 						
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<div class="col-sm-3">
 					<h3>Nhận ứng dụng GlobalFlight</h3>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -633,13 +609,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<div class="col-sm-3">
 					<h3>Theo dõi chúng tôi</h3>
 					<div class="row">
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon-footer"><span class="fa fa-facebook-official"></span></div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon-footer"><span class="fa fa-skype"></span></div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon-footer"><span class="fa fa-twitter"></span></div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon-footer"><span class="fa fa-youtube-square"></span></div>
+							<div class="col-sm-3 icon-footer"><span class="fa fa-facebook-official"></span></div>
+							<div class="col-sm-3 icon-footer"><span class="fa fa-skype"></span></div>
+							<div class="col-sm-3 icon-footer"><span class="fa fa-twitter"></span></div>
+							<div class="col-sm-3 icon-footer"><span class="fa fa-youtube-square"></span></div>
+						
 					</div>
 				</div>
 			</div>
@@ -652,8 +629,43 @@
 			</div>
 		</div>
 	</footer>
+	
+	
 	<!-- end footer-->
 	<script src="js/function.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+		<script src="lib/jquery.easy-autocomplete.js"></script>
+		<script>
+			function hanhkhach() {
+      var _nguoilon = $('#inputNguoilon').val();
+      var _treem  = $('#inputTreem').val();
+      var _tresosinh = $('#inputTresosinh').val();
+      num1 = parseInt(_nguoilon);
+      num2 = parseInt(_treem);
+      num3 = parseInt(_tresosinh);
+       var tong = num1 + num2 + num3;
+       var tong_tresosinh = num1 + num2;
+       $('#nguoilon').val(_nguoilon);
+       $('#treem').val(_tresosinh);
+       $('#tresosinh').val(_tresosinh);
+       $('#inputSonguoi').val(tong);
+       if (num3 > tong_tresosinh) {
+        alert("Số trẻ sơ sinh vượt quá mức cho phép");
+        return false;
+       } else {
+         $('#soluong').modal('toggle');
+
+       }
+      }
+		
+			function xong(){
+				$('#noiden').modal('toggle');
+			}
+			
+				 
+			
+		</script>
+
 	
 </body>
 </html>
